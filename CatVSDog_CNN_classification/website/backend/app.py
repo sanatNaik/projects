@@ -8,7 +8,7 @@ import io
 app = Flask(__name__)
 CORS(app, resources={r"/predict": {"origins": "http://127.0.0.1:5500"}})
 
-model = tf.keras.models.load_model('catVdogCNN.h5')
+model = tf.keras.models.load_model('predictor_model.h5')
 
 def preprocess_image(image_bytes):
     image = Image.open(io.BytesIO(image_bytes)).resize((128,128))

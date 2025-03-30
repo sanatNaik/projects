@@ -1,6 +1,0 @@
-The `.h5` model file is too large to include in this repository.  
-To download it automatically:
-
-```bash
-pip install gdown
-python download_model.py
