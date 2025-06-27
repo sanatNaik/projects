@@ -1,0 +1,31 @@
+# 🧠 AI PDF Summariser
+
+A full-stack web application that allows users to upload PDF documents and generate either **short**
+or **detailed summaries** using Google's **Gemini API**. Built with **React**, **Tailwind CSS**, and **Flask**,
+the app provides a fast and intuitive experience for summarizing long documents.
+Summaries can be copied directly or downloaded as PDF files.
+
+---
+
+## ✨ Features
+
+- 📄 Upload any `.pdf` document through the web interface
+- 🤖 Generate **AI-based summaries** using Gemini API
+- 🔀 Choose between **Short** or **Detailed summaries** using different system prompts
+- 📋 Copy the generated summary to clipboard
+- 📥 Download the summary as a `.pdf` file
+- 💡 Clean and responsive UI built with React and Tailwind CSS
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer        | Technology                    |
+|--------------|-------------------------------|
+| Frontend     | React, Tailwind CSS           |
+| Backend      | Flask (Python)                |
+| AI Model     | Gemini API (Google GenAI)     |
+| PDF Text Extraction | **PyMuPDF**       |
+| Summary Export (PDF) | `html2pdf.js`   |
+
+---
