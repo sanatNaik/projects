@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:rgb(226, 143, 18);
+    --color2:rgb(0, 0, 0);
+    --color3:rgb(20, 21, 22);
+    /* font-family: 'Winky Sans';*/
+} 
+.title-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:orange;
+}
+#logo{
+    height:100px;
+    width:100px;
+}
+nav{
+    padding:10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font: bold;
+    height:120px;
+    display: flex;
+    width:100%;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: var(--color2);
+    border-bottom: solid 5px var(--color1);
+    font-size: x-large;
+    color:var(--color1);
+    
+}
+.nav_bar{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    width:90px;
+    height:40px;
+    border-radius: 5px;
+    font-size:1.1rem;
+    color:black;
+    font-weight: bold;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: var(--color1);
+    color:black;
+}
+.button a:hover{
+    color:black;
+}
+.button a{
+    font-weight: bold;
+    color:black;
+}
+.nonbutton{
+    color:white;
+    font-weight: bold;
+}
+.nonbutton:hover{
+    color:orange;
+}
+.main_body{
+    width:100%;
+    height:84vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    background-color:var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border:1px solid var(--color1);
+    border-radius: 30px;
+    color:white;
+    font-size: x-large;
+    gap:50px;
+    padding:50px;
+
+}
+.title-block{
+    display: flex;
+    color: rgb(0, 217, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.login-block{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: center;
+    gap:40px;
+}
+#login-form{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+button{
+    font-size:1.1rem;
+    font-weight: bold;
+    width:120px;
+    height:40px;
+    background-color: var(--color1);
+    color:black;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: white;
+}
+.line-block{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:orange;
+}

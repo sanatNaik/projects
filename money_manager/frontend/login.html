@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/frontend/logo.png">
+    <title>Money Manager</title>
+</head>
+<body>
+    <nav> 
+        <div class="title-bar">
+            <div id="logo">
+                <img src="logo.png" alt="logo" id="logo">
+            </div>
+            <div>   
+                <p><h1>MoneyManager</h1>Track . Save . Grow</p>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="index.html" class="nonbutton">Home</a>
+            <a href="dashboard.html" class="nonbutton">Dashboard</a>
+            <button class="button"><a href="login.html">Login</a></button>
+            <button class="button" id="logout-button">Logout</button>
+            <button class="button"><a href="signup.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <div class="main_body">
+        <div class="login-box">
+            <div class="title-block">
+                <h4>Enter your Username and password to Login</h4>
+                <p>Please <a href="signup.html">Sign Up</a> if account doesnt exist</p>
+            </div>
+            <div class="login-block">
+                <form id="login-form">
+                    <div class="line-block">
+                        <label for="username">UserName:</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="line-block">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button id="submit-button">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="loginscript.js"></script>
+</body>
+</html>

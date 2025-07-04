@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/frontend/logo.png">
+    <title>Money Manager</title>
+</head>
+<body>
+    <nav> 
+        <div class="title-bar">
+            <div id="logo">
+                <img src="logo.png" alt="logo" id="logo">
+            </div>
+            <div>   
+                <p><h1>MoneyManager</h1>Track . Save . Grow</p>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="index.html" class="nonbutton">Home</a>
+            <a href="dashboard.html" class="nonbutton">Dashboard</a>
+            <button class="button"><a href="login.html">Login</a></button>
+            <button class="button" id="logout-button">Logout</button>
+            <button class="button"><a href="signup.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <div class="outer-box">
+        <div class="Record-box">
+            <div class="title-block">
+                <h1>Record</h1>
+            </div>
+            <div id="output-box">
+        
+            </div>
+        </div>
+        <div class="Add-box">
+            <div class="title-block-3">
+                <h1>Add Expenditure</h1>
+            </div>
+            <form class="internal-block" id="it-block-form">
+                <div class="ip-block">
+                    <p>Type</p>
+                    <div>
+                        <input type="radio" id="type1" name="type_selector" value="Expense">
+                        <label for="type1">Expense</label>
+                        <input type="radio" id="type2" name="type_selector" value="Income">
+                        <label for="type2">Income</label>
+                    </div>
+                </div>
+                <div class="ip-block">
+                    <label for="amount">Amount</label>
+                    <input type="number"  id="amount">
+                </div>
+                <div class="ip-block">
+                    <label for="account">Account</label>
+                    <input list="account-list" name="account" id="account">
+                    <datalist id="account-list">
+
+                    </datalist>
+                </div>
+                <div class="ip-block">
+                    <label for="tag">Tag</label>
+                    <input type="text" id="tag">
+                </div>
+                <div class="ip-block">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <button id="add_button">Add</button>
+                <p id="error_message"></p>
+            </form>
+        </div>
+        <div class="Expenditure">
+            <div class="title-block-2">
+                <h1>Monthly Expenditure</h1>
+            </div>
+            <div class="monthly-box">
+                <p id="monthly-title">Last 30 days</p>
+                <div class="monthly-box-2">
+                    <div class="monthly-col">
+                        <p>Expense</p>
+                        <p id="expense-monthly">4000</p>
+                    </div>
+                    <div class="monthly-col">
+                        <p>Income</p>
+                        <p id="income-monthly">5000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Add-Account-box">
+            <div class="title-block-2">
+                <h1>Add Accounts</h1>
+            </div>
+            <form class="internal-block" id="it-block-form-2">
+                <div class="ip-block">
+                    <label for="bank_name">Bank Name</label>
+                    <input type="text" id="bank_name">
+                </div>
+                <div class="ip-block">
+                    <label for="account_balance">Account Balance</label>
+                    <input type="number" id="account_balance">
+                </div>
+                <button id="add_account_button">Add Account</button>
+            </form>
+        </div>
+        <div class="Accounts-box">
+            <div class="title-block-2">
+                <h1>Accounts</h1>
+            </div>
+            <div id="account-Ip-Box">
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
